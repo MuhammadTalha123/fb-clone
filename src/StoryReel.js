@@ -1,29 +1,39 @@
 import React from 'react'; 
 import Story from './Story';
 import "./StoryReel.css";
+import img1 from "./images/amir.jpeg"
+import img2 from "./images/umiar.jpeg"
+import img3 from "./images/raza.jpeg"
+import img4 from "./images/tayyab.jpeg"
+import img5 from "./images/mohsin.jpeg"
+import img6 from "./images/amirStory.jpeg"
+import img7 from "./images/tayyabStory.jpeg"
+import img8 from "./images/umairStory.jpeg"
+import img9 from "./images/razaStory.jpeg"
+import img10 from "./images/mohsinStory.jpeg"
 
 function StoryReel() {
     return (
         <div className="storyReel" >
             <Story 
-            image="blob:https://web.whatsapp.com/4bbc1d46-eec7-4420-8958-47e2015dca75"
-            profileSrc="blob:https://web.whatsapp.com/89419ada-51aa-4559-91c6-210bedc65937"
+            image={img7}
+            profileSrc={img4}
             title="Tayyab" />
             <Story 
-            image="blob:https://web.whatsapp.com/ad10de46-a320-43e6-8225-06786cece5ac"
-            profileSrc="blob:https://web.whatsapp.com/118ee1ea-1433-4dc1-915c-9904f9ae9bf9"
+            image={img6}
+            profileSrc={img1}
             title="Amir" />
             <Story 
-            image="blob:https://web.whatsapp.com/a574ac87-8f68-43c1-acbc-77e1c335d50f"
-            profileSrc="blob:https://web.whatsapp.com/0953079d-148a-4d75-a7f4-aa65ce4ec617"
+            image={img8}
+            profileSrc={img2}
             title="Umair" />
             <Story 
-            image="blob:https://web.whatsapp.com/df649d95-729a-45a7-8a1b-c01f08133ceb"
-            profileSrc="blob:https://web.whatsapp.com/eb840d50-af69-4e37-8355-31fdbc457998"
+            image={img9}
+            profileSrc={img3}
             title="Ali Raza" />
             <Story 
-            image="blob:https://web.whatsapp.com/0bb2a263-963e-445f-8151-5073737660c3"
-            profileSrc="blob:https://web.whatsapp.com/ca54828c-5106-4683-b75b-fafbedd663ae"
+            image={img10}
+            profileSrc={img5}
             title="Mohsin" />
         </div>
     )
