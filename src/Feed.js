@@ -9,8 +9,14 @@ function Feed() {
         <div className="feed" >
             <StoryReel />
             <MessageSender />
-            
-            <Post />
+
+            <Post 
+            profilePic="https://avatars2.githubusercontent.com/u/59221584?s=400&u=fa2672a34b583ad3acf351c1976fc1e3b38795c6&v=4" 
+            message="WOW this is work." 
+            timestamp="this is timestamp" 
+            username="Muhammad Talha" 
+            image="https://www.tamansimalem.com/wp-content/uploads/2014/05/pageheader-fruits.jpg" 
+            />
             <Post />
             <Post />
 
