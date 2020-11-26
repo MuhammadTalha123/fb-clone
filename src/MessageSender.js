@@ -1,11 +1,12 @@
 import { Avatar } from '@material-ui/core';
+import { InsertEmoticon, PhotoLibrary, Videocam } from '@material-ui/icons';
 import React from 'react';
 import "./MessageSender.css"
 
 export const MessageSender = () => {
 
     const handleSubmit = e => {
-        // e.preventDefault();
+        e.preventDefault();
     }
 
     return (
@@ -13,12 +14,25 @@ export const MessageSender = () => {
             <div className="messageSender__top" >
                 <Avatar />
                 <form>
-                    <input className="messageSender__input" type="text" placeholder={`Whats on your mind.`} />
+                    <input className="messageSender__input" type="text" placeholder={`Whats on your mind?`} />
                     <input placeholder="image URL (Optional)" />
                     <button onClick={handleSubmit} type="submit" >Hidden submit</button>
                 </form>
             </div>
-            <div className="messageSender__bottom" ></div>
+            <div className="messageSender__bottom" >
+                <div className="messageSender__option" >
+                    <Videocam style={{color:"red"}} />
+                    <h3>Live Vedio</h3>
+                </div>
+                <div className="messageSender__option" >
+                    <PhotoLibrary style={{color:"green"}} />
+                    <h3>Photo/Video</h3>
+                </div>
+                <div className="messageSender__option" >
+                    <InsertEmoticon style={{color:"orange"}} />
+                    <h3>Feeling/Activity</h3>
+                </div>
+            </div>
         </div>
     )
 }
