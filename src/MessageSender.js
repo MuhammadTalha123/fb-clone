@@ -24,7 +24,7 @@ export const MessageSender = () => {
                 <form>
                     <input value={input} onChange={e => setInput(e.target.value)}
                      className="messageSender__input" type="text" 
-                     placeholder={`Whats on your mind, ${user.displayName}?`} />
+                     placeholder={`Whats on your mind ${user.displayName}?`} />
                     <input value={imageUrl} onChange={e => setImageUrl(e.target.value)} placeholder="image URL (Optional)" />
                     <button onClick={handleSubmit} type="submit" >Hidden submit</button>
                 </form>

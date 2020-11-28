@@ -13,8 +13,8 @@ import { useStateValue } from './StateProvider';
 
 function Sidebar() {
 
-    const [{ user }, dispatch] = useStateValue();
-
+  const [{ user }, dispatch] = useStateValue();
+    
     return <div className="sidebar">
         <SidebarRow src={user.photoURL} title={user.displayName} />
         <SidebarRow Icon={LocalHospitalIcon} title="Covid-19 information center" />
