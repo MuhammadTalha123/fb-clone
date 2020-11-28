@@ -14,7 +14,7 @@ function Post({profilePic, image, username, timestamp, message}) {
                     <p>{new Date(timestamp?.toDate()).toUTCString()}</p>
                 </div>
            </div> 
-           <div className="post_bottom">
+           <div className="post__bottom">
                 <p>{message}</p>
            </div>
            <div className="post__image"> 
